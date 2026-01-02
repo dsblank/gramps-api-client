@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "gramps-api-client"
 dynamic = ["version"]
 description = "Python client for Gramps Web API"
+readme = "README.md"
 requires-python = ">=3.7"
 license = {file = "LICENSE"}
 authors = [
