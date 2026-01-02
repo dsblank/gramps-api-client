@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gramps-api-client"
+dynamic = ["version"]
+description = "Python client for Gramps Web API"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Gramps Project"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "gramps-webapi>=3.6.0",
+    "requests",
+]
+
+[project.urls]
+Homepage = "https://github.com/dsblank/gramps-api-client"
+Repository = "https://github.com/dsblank/gramps-api-client"
+Issues = "https://github.com/dsblank/gramps-api-client/issues"
+
+[tool.setuptools]
+packages = ["gramps_api_client"]
+
+[tool.setuptools.dynamic]
+version = {attr = "gramps_api_client._version.__version__"}
+
